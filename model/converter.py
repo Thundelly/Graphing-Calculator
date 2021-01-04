@@ -10,7 +10,7 @@ class Converter:
     """
 
     def __init__(self):
-        self.debug = False
+        self.debug = True
 
     def convert_infix_to_postfix(self, equation_input: Equation) -> Equation:
         """
@@ -32,7 +32,6 @@ class Converter:
                 if self.debug:
                     print("Output String:", output_str)
                     print("Operator Stack:", stack)
-
                 # If the token is a number, add to output string.
                 if not token.is_operator():
                     output_str += token.get_value()

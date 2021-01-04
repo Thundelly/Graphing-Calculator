@@ -21,7 +21,8 @@ class Equation:
             self.set_notation_to_postfix()
         else:
             self.notation = notation
-            raise Exception("Invalid equation notation. Valid notations are: 'prefix', 'infix', or 'postfix'")
+            raise Exception("Invalid equation notation. Valid notations are: 'prefix', 'infix', or 'postfix'. "
+                            "Current notation: {}.".format(notation))
 
     def set_equation(self, equation: str) -> None:
         """

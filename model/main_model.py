@@ -5,7 +5,7 @@ from model.converter import Converter
 class Main_Model:
     def __init__(self):
         converter = Converter()
-        equation_input = Equation("1+2*3/(4-5)", "infix")
+        equation_input = Equation("(((((3*(((4^(2/4)))))))))", "infix")
 
         equation_output = converter.convert_infix_to_postfix(equation_input)
 

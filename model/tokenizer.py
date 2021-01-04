@@ -21,7 +21,7 @@ class Tokenizer:
         equation = equation_input.get_equation()
         tokens = []
 
-        pattern = re.compile(r"([+*/()-])")                 # regex for delimiters
+        pattern = re.compile(r"([+*/()-^])")                 # regex for delimiters
         equation = pattern.sub(" \\1 ", equation).split() # split with whitespace delimiter
 
         for elem in equation:
