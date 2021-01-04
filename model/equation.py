@@ -35,3 +35,10 @@ class Equation:
         :return: equation
         """
         return self.equation
+
+    def get_notation(self) -> str:
+        """
+        Returns the notation mode
+        :return: notation
+        """
+        return self.notation
