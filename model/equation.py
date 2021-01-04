@@ -17,7 +17,6 @@ class Equation:
             self.notation = notation
 
         else:
-            self.notation = notation
             raise Exception("Invalid equation notation. Valid notations are: 'prefix', 'infix', or 'postfix'. \
                             Current notation: {}.".format(notation))
 
